@@ -2,13 +2,21 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TesteCalendario"
+             xmlns:Calendario="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
              x:Class="TesteCalendario.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Spacing="0">
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Calendario:SfCalendar x:Name="calendar" InlineToggled="MostraCompromisso" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
+            <Label Text="" x:Name="cDesc"/>
+            <Label Text="" x:Name="cHora"/>
+            <BoxView  x:Name="cCor" WidthRequest="20" HeightRequest="30"/>
+        </StackLayout>
+        
     </StackLayout>
 
 </ContentPage>

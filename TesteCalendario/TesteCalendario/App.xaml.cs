@@ -9,7 +9,10 @@ namespace TesteCalendario
 	{
 		public App ()
 		{
-			InitializeComponent();
+            //Register Syncfusion license
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjMwOTJAMzEzNjJlMzIyZTMwVTM2ZXRBV1YvUW02N0xrVjJ3Z3BwblpQd2R4L3Fra2tBQUdWL1hHVmVJYz0=");
+
+            InitializeComponent();
 
 			MainPage = new MainPage();
 		}
