@@ -8,7 +8,7 @@
     <StackLayout Spacing="0">
 
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <Calendario:SfCalendar x:Name="calendar" InlineToggled="MostraCompromisso" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Calendario:SfCalendar x:Name="calendar" InlineViewMode="Agenda"  InlineToggled="MostraCompromisso" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
         </StackLayout>
 
         <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >

@@ -20,7 +20,7 @@ namespace TesteCalendario
             CalendarInlineEvent events = new CalendarInlineEvent
             {
                 StartTime = new DateTime(2018, 9, 3, 5, 0, 0),
-                EndTime = new DateTime(2018, 9, 3, 7, 0, 0),
+                EndTime = new DateTime(2018, 9, 3, 5, 0, 0),
                 Subject = "Go to Meeting",
                 Color = Color.Fuchsia
             };
